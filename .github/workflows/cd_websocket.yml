@@ -20,6 +20,6 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: .
-          file: ./docker/Dockerfile.websocket
+          file: ./docker/Dockerfile.ws
           push: true
           tags: sriman001/user-app-websocket:${{ github.sha }}
