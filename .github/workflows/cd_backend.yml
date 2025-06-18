@@ -1,8 +1,8 @@
 name: Deploy the backend
 on:
   push:
-    branches:[ main ]
-jobs:
+    branches:
+      - main
   build:
     runs-on: ubuntu-latest
     steps:

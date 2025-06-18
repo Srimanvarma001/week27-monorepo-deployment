@@ -18,7 +18,7 @@ services:
       args:
         - DB_URL=postgresql://postgres:postgres@postgres:3000/postgres
     ports:
-      - "3000:3000"
+      - "3001:3001"
     environment:
       - DATABASE_URL=postgresql://postgres:postgres@postgres:3000/postgres
     depends_on:
@@ -39,7 +39,7 @@ services:
     environment:
       - POSTGRES_PASSWORD=postgres
     ports:
-      - "5432:5432"
+      - "3000:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
